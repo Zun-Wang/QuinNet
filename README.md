@@ -1,6 +1,6 @@
 <div align="center">
 
-# QuinNet
+# QuinNet: Efficiently Incorporating Quintuple Interactions into Geometric Deep Learning Force Fields
 
 
 </div>
