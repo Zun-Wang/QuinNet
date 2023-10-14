@@ -9,7 +9,7 @@
 
 ## 📌  Introduction
 
-QuinNet is an equivariant GNN architecture which incorporates 3-body, 4-body, and 5-body interactions, for constructing force fields for molecular dynamics simulations. Details could be found in [NeurIPS 2023](https://neurips.cc/virtual/2023/poster/71146).
+This repository contains the source code for NeurIPS 2023 paper "QuinNet: Efficiently Incorporating Quintuple Interactions into Geometric Deep Learning Force Fields". QuinNet is an equivariant graph neural network that efficiently expresses many-body interactions up to five-body interactions with ab initio accuracy.
 
 <br>
 
