@@ -31,7 +31,8 @@ cd QuinNet
 # Take `cuda116` version as an example
 pip install rdkit ase
 pip install torch==1.13.1+cu116 --extra-index-url https://download.pytorch.org/whl/cu116
-pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv torch_geometric -f https://data.pyg.org/whl/torch-1.13.0+cu116.html
+pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-1.13.0+cu116.html
+pip install torch_geometric==2.3.0
 pip install pytorch-lightning==1.8.3
 ```
 
