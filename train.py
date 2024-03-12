@@ -206,7 +206,6 @@ def main():
         logger=[csv_logger],
         strategy=SingleDeviceStrategy(accelerator=args.accelerator, device='cuda:0'),
         enable_progress_bar=False,
-        inference_node=False,
     )
         
         if args.mode == 'train':
