@@ -126,7 +126,7 @@ class DataModule(LightningDataModule):
             # only remove atomref energies if the atomref prior is used
             atomref = self.atomref if self.hparams['prior_model'] == 'Atomref' else None
             # extract energies from the data
-            ys = torch.cat([get_energy(batch, atomref) for batch in data])
+            ys = torch.cat([torch.atleast_1d(get_energy(batch, atomref)) for batch in data])
         except MissingEnergyException:
             rank_zero_warn('Standardize is true but failed to compute dataset mean and standard deviation. Maybe the dataset only contains forces.')
             return
